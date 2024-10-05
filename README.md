@@ -45,7 +45,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/fruit-and-disease-detection.git
+git clone https://github.com/AshishTukaral/Fruit-Ripeness-and-Disease-Detection.git
 cd fruit-and-disease-detection
 ```
 
