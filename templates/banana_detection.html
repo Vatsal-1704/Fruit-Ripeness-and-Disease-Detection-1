@@ -89,11 +89,22 @@
         .back-btn a:hover {
             color: #0056b3;
         }
+
+        .alert {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            color: #fff;
+            background-color: #dc3545;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Banana Detection</h1>
+        {% if alert %}
+        <div class="alert alert-danger">{{ alert }}</div>
+        {% endif %}
         <form action="" method="POST" enctype="multipart/form-data" id="uploadForm">
             <input type="file" name="file" id="fileInput" onchange="displayFileName()">
             <label for="fileInput">Choose Banana Image</label>
@@ -111,6 +122,7 @@
             const fileInput = document.getElementById('fileInput');
             const fileNameDisplay = document.getElementById('fileName');
             fileNameDisplay.textContent = fileInput.files[0].name;
+            
         }
     </script>
 </body>
